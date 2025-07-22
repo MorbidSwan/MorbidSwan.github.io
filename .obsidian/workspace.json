@@ -46,10 +46,14 @@
             "id": "01b6832310f1b38a",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Index.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Index"
             }
           }
         ]
@@ -212,6 +216,7 @@
   },
   "active": "01b6832310f1b38a",
   "lastOpenFiles": [
+    "Index.md",
     "README.md",
     "web/nnndidndidn.md",
     "web/bingud.md",
