@@ -1,1 +1,5 @@
-[[README]]
+---
+layout: page
+---
+
+[[readme.md]]
