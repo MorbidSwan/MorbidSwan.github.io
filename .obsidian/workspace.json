@@ -46,14 +46,10 @@
             "id": "01b6832310f1b38a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "web/nnndidndidn.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "nnndidndidn"
+              "title": "New tab"
             }
           }
         ]
@@ -214,11 +210,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "84bc1038ffd60ca3",
+  "active": "01b6832310f1b38a",
   "lastOpenFiles": [
-    "web/bingud.md",
-    "web/nnndidndidn.md",
     "README.md",
+    "web/nnndidndidn.md",
+    "web/bingud.md",
     "web",
     "index.html",
     "index.html.md",
