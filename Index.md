@@ -3,4 +3,4 @@ layout: page
 permalink: /
 ---
 
-[[readme.md]]
+[README](README.md)
