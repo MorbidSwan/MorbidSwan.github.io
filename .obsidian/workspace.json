@@ -194,8 +194,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "418ba4339109cb8e",
+  "active": "bf303ab353d73e79",
   "lastOpenFiles": [
+    "Expedition-616/Main.md",
+    "Index.md",
+    "wiki/main_page.md",
+    "Expedition-616",
+    "_layouts/git-wiki-404.html",
     "_includes/git-wiki/sections/tools/tools.html",
     "_includes/git-wiki/sections/header/header.html",
     "_includes/git-wiki/sections/tail/tail.html",
@@ -204,10 +209,6 @@
     "_includes/git-wiki/sections/head/meta.html",
     "_includes/git-wiki/sections/head/head.html",
     "_includes/git-wiki/sections/content/wrapper.html",
-    "_includes/git-wiki/sections/content/content.html",
-    "_includes/git-wiki/sections/content/body.html",
-    "_includes/git-wiki/sections/footer/footer.html",
-    "wiki/main_page.md",
     "assets/fonts/Noto-Sans-regular/Noto-Sans-regular.svg",
     "assets/fonts/Noto-Sans-italic/Noto-Sans-italic.svg",
     "assets/fonts/Noto-Sans-700italic/Noto-Sans-700italic.svg",
@@ -216,7 +217,6 @@
     "assets/images/external-link-ltr-icon.png",
     "README.md",
     "web/bingud.md",
-    "Index.md",
     "_site/Index.md",
     "web/nnndidndidn.md",
     "index.html.md",
