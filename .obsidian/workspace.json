@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Index"
             }
           }
         ],
@@ -196,15 +196,15 @@
   },
   "active": "bf303ab353d73e79",
   "lastOpenFiles": [
-    "web/bingud.md",
+    "index.html",
     "README.md",
+    "web/bingud.md",
     "Index.md",
     "_site/Index.md",
     "_site/Index.html",
     "index.markdown",
     "web/nnndidndidn.md",
     "web",
-    "index.html",
     "index.html.md",
     "test.md",
     "Welcome.md"
