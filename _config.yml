@@ -33,6 +33,7 @@ plugins:
   - jekyll-feed
   - jekyll-remote-theme
 markdown: GFM
+search_engine: js
 
 # Exclude from processing.
 # The following items will not be processed, by default.
