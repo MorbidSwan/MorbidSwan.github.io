@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Expedition-616/Main.md",
+                "file": "Index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Main"
+              "title": "Index"
             }
           }
         ],
@@ -181,7 +181,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 322.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -196,11 +196,11 @@
   },
   "active": "bf303ab353d73e79",
   "lastOpenFiles": [
-    "Index.md",
     "Expedition-616/Main.md",
+    "assets/404.md",
+    "Index.md",
     "_layouts/git-wiki-post.html",
     "_layouts/git-wiki-default.html",
-    "assets/404.md",
     "wiki/main_page.md",
     "Expedition-616",
     "_layouts/git-wiki-404.html",
