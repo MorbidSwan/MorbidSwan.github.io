@@ -34,6 +34,7 @@ plugins:
   - jekyll-remote-theme
 markdown: GFM
 search_engine: js
+use_github_wiki: false
 
 # Exclude from processing.
 # The following items will not be processed, by default.
