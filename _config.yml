@@ -35,6 +35,7 @@ plugins:
 markdown: GFM
 search_engine: js
 use_github_wiki: FALSE
+inc_after_head: FALSE
 
 # Exclude from processing.
 # The following items will not be processed, by default.
