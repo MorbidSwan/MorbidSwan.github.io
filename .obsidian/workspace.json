@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Index.md",
+                "file": "web/Index.md",
                 "mode": "source",
                 "source": false
               },
@@ -179,16 +179,19 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "af149cabea894eac",
+  "active": "84bc1038ffd60ca3",
   "lastOpenFiles": [
-    "Expedition-616/Main.md",
-    "Index.md",
-    "README.md",
-    "Expedition-616/Places/Nala.md",
-    "Expedition-616/Deities/Songeop.md",
-    "Expedition-616/Places/Song Town.md",
     "web/Locked.md",
     "web/Test.md",
+    "Expedition-616/People/Frozzo.md",
+    "Expedition-616/Places/Song Town.md",
+    "Expedition-616/Places/Frozzo's School of Music.md",
+    "Expedition-616/Deities/Songeop.md",
+    "Expedition-616/Places/Nala.md",
+    "Expedition-616/Main.md",
+    "Expedition-616/People",
+    "web/Index.md",
+    "README.md",
     "expedition-616/places/nala.md",
     "Expedition-616/Places/nala.md",
     "assets/images/external-link-ltr-icon.png",
@@ -207,7 +210,6 @@
     "assets/fonts/Noto-Sans-regular/Noto-Sans-regular.svg",
     "assets/fonts/Noto-Sans-regular/Noto-Sans-regular.eot",
     "assets/fonts/Noto-Sans-700italic/Noto-Sans-700italic.svg",
-    "assets/fonts/Noto-Sans-700italic/Noto-Sans-700italic.ttf",
     "assets/fonts/Noto-Sans-italic/Noto-Sans-italic.svg",
     "assets/fonts/Noto-Sans-700/Noto-Sans-700.svg",
     "web/bingud.md",
