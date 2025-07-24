@@ -3,7 +3,6 @@ permalink: /Expedition-616/Main
 layout: git-wiki-post
 ---
 ___
-
 # Expedition-616
 
 ### Expedition-616 is my DnD campaign with a world loosely inspired by the video game "Clair Obscur: Expedition 33"
