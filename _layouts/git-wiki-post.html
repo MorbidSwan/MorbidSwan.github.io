@@ -1,7 +1,9 @@
 ---
 layout: git-wiki-default
 ---
-
+{% if page.locked %}
+<meta http-equiv="refresh" content="0; url=https://morbidswan.github.io/locked/" />
+{% endif %}
 <small>{{ page.date | date: "%-d %B %Y" }}</small>
 {% if page.author or site.author %}
 <p class="view">by {{ page.author | default: site.author }}</p>
