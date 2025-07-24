@@ -1,5 +1,5 @@
 ---
-permalink: /expedition-616/deities/songeop
+permalink: /Expedition-616/Deities/Songeop
 layout: git-wiki-post
 ---
 
