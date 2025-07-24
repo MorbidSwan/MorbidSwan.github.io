@@ -11,7 +11,7 @@ ___
 
 | People | Places                                          | Events | Deities                                    |
 | ------ | ----------------------------------------------- | ------ | ------------------------------------------ |
-|        | [Song Town](/Expedition-616/Places/Song%20Town) |        | [Songeop](/Expedition-616/Deities/Songeop) |
+|        | [Song Town](/Expedition-616/Places/Song%20Town) |        | [Songeop](/expedition-616/deities/songeop) |
 |        |                                                 |        |                                            |
 
 

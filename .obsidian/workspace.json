@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "web/Locked.md",
+                "file": "Expedition-616/Deities/Songeop.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Locked"
+              "title": "Songeop"
             }
           }
         ]
@@ -181,13 +181,13 @@
   },
   "active": "af149cabea894eac",
   "lastOpenFiles": [
-    "web/Test.md",
-    "web/Locked.md",
-    "Index.md",
-    "Expedition-616/Main.md",
-    "Expedition-616/Deities/Songeop.md",
     "Expedition-616/Places/Nala.md",
     "Expedition-616/Places/Song Town.md",
+    "Expedition-616/Deities/Songeop.md",
+    "Expedition-616/Main.md",
+    "web/Locked.md",
+    "web/Test.md",
+    "Index.md",
     "expedition-616/places/nala.md",
     "Expedition-616/Places/nala.md",
     "assets/images/external-link-ltr-icon.png",
