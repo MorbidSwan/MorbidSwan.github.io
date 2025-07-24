@@ -11,14 +11,15 @@
             "id": "91e34c20367e2685",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "Expedition-616/Main.md",
-                "mode": "source",
-                "source": false
+                "aFile": "_layouts/git-wiki-404.html",
+                "bFile": "_layouts/git-wiki-404.html",
+                "aRef": "HEAD",
+                "bRef": ""
               },
-              "icon": "lucide-file",
-              "title": "Main"
+              "icon": "diff",
+              "title": "Diff: git-wiki-404.html"
             }
           }
         ]
@@ -179,8 +180,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "84bc1038ffd60ca3",
+  "active": "91e34c20367e2685",
   "lastOpenFiles": [
+    "Expedition-616/Main.md",
     "Expedition-616/Places/Song Town.md",
     "Expedition-616/Places",
     "web/nnndidndidn.md",
@@ -202,7 +204,6 @@
     "assets/images/external.svg",
     "assets/images/external-link-ltr-icon.png",
     "Index.md",
-    "Expedition-616/Main.md",
     "web/bingud.md",
     "README.md",
     "index.html.md",
