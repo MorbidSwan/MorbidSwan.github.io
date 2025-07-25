@@ -31,4 +31,3 @@ The people often celebrated their diverse heritages with holidays and sales enco
 During the events of [The Cataclysm](/Expedition-616/Events/Cataclysm), many fissures opened across the land. Two of these fissures managed to cross just north of Song Town, pushing it out into the ocean and beyond the horizon.
 
 ### People
-
