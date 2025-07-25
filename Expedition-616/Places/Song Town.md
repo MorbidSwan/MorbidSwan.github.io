@@ -31,3 +31,15 @@ The people often celebrated their diverse heritages with holidays and sales enco
 During the events of [The Cataclysm](/Expedition-616/Events/Cataclysm), many fissures opened across the land. Two of these fissures managed to cross just north of Song Town, pushing it out into the ocean and beyond the horizon.
 
 ### People
+The population of Song Town has slowly declined since the events of [The Cataclysm](/Expedition-616/Events/Cataclysm), boasting a population of ~50,000, now sitting at only ~10,000. The people are still as diverse as it was with every person being proud of there heritage, often leading classes or groups to share stories and tales from their family to the younger generations that don't know life outside of Song Town.
+
+### Survival
+Being separated from the mainland means that the city is largely safe from the Demons roaming the across it. However, fisherman that have accidentally floated too close to shore have failed to return. It is presumed that some Demons live in the waters near shore, so expedition boats are enchanted with protection and concealment charms. 
+
+With less land available, agriculture has been limited to many terraced gardens and coops of quail and chickens. Fisherman will take boats out away from the mainland to gather seafood as well.
+
+### Jiuda
+On the [Day of Jiuda](/Expedition-616/Events/Jiuda) every year the people of Song Town gather at the northern tip of their now island city at dusk on the summer solstice and watch the beam of light that streaks out from the horizon. After the flash, and the sun sets, a party is had in the town center in mourning of those that had been lost, celebration of those that lived, and farewell to those traveling on the yearly expedition. A shrine to [Jugeom](/Expedition-616/Deities/Jugeom), The God of Death with a book laid beneath is constructed at the fountain, those who have lost someone from [Jiuda](/Expedition-616/Events/Jiuda) sign their names in the book.
+
+### Expeditions
+On the day after the [Day of Jiuda](/Expedition-616/Events/Jiuda), volunteers leave at the break of dawn on an expedition to the mainland. Their goal is to forge a path to the pillar of light and put an end to the [Jiuda](/Expedition-616/Events/Jiuda). None of these expeditions have ever returned to Song Town, and no information as to their whereabouts exists. 
