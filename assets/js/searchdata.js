@@ -6,12 +6,14 @@ is_wiki_page: false
 var jsondata=[
   {% for post in site.posts %}
     {
+      {% if page.locked != true %}
       "title"    : "{{ post.title | escape }}",
       "category" : "{{ post.category }}",
       "tags"     : "{{ post.tags | join: ', ' }}",
       "url"      : "{{ site.baseurl }}{{ post.url }}",
       "date"     : "{{ post.date }}",
       "content"  : {{ page.content | jsonify }}
+      {% endif %}
     } {% unless forloop.last %},{% endunless %}
   {% endfor %}
   ,
@@ -19,12 +21,14 @@ var jsondata=[
    {
      {% assign title = page.title | default: page.name %}
      {% if title != nil %}
+        {% if page.locked != true %}
         "title"    : "{{ title | escape }}",
         "category" : "{{ page.category }}",
         "tags"     : "{{ page.tags | join: ', ' }}",
         "url"      : "{{ site.baseurl }}{{ page.url }}",
         "date"     : "{{ page.date }}",
         "content"  : {{ page.content | jsonify }}
+        {% endif %}
      {% endif %}
    } {% unless forloop.last %},{% endunless %}
   {% endfor %}
@@ -38,7 +42,7 @@ var sjs = SimpleJekyllSearch({
     noResultsText: 'No results found',
     limit: 10,
     fuzzy: false,
-    exclude: []
+    exclude: ["404", "/locked/"]
   })
 {% endif %}
 
