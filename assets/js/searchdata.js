@@ -13,22 +13,19 @@ var jsondata=[
       "url"      : "{{ site.baseurl }}{{ post.url }}",
       "date"     : "{{ post.date }}",
       "content"  : {{ page.content | jsonify }}
-      {% endif %}
-    } {% unless forloop.last %},{% endunless %}
+    } {% endif %}{% unless forloop.last %},{% endunless %}
   {% endfor %}
   ,
   {% for page in site.html_pages %}
    {
      {% assign title = page.title | default: page.name %}
-     {% if title != nil %}
-        {% if page.locked != true %}
+     {% if title != nil and page.locked != true %}
         "title"    : "{{ title | escape }}",
         "category" : "{{ page.category }}",
         "tags"     : "{{ page.tags | join: ', ' }}",
         "url"      : "{{ site.baseurl }}{{ page.url }}",
         "date"     : "{{ page.date }}",
         "content"  : {{ page.content | jsonify }}
-        {% endif %}
      {% endif %}
    } {% unless forloop.last %},{% endunless %}
   {% endfor %}
