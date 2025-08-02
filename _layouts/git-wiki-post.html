@@ -1,7 +1,10 @@
 ---
 layout: git-wiki-default
 ---
-{% if page.locked %}
+<div id="pass">
+<script src="{{ '/assets/js/lockedPass.js' | relative_url }}"></script>
+</div>
+{% if page.locked and pass != page.pass %}
 <meta http-equiv="refresh" content="0; url=https://morbidswan.github.io/locked/" />
 {% endif %}
 <small>{{ page.date | date: "%-d %B %Y" }}</small>
