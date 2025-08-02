@@ -1,3 +1,7 @@
-url = new URL(window.location.href);
-pass = url.searchParams.get("pass");
-document.getElementById("pass").value = pass;
+searchParams = new URLSearchParams(window.location.search)
+urlPass = searchParams.get("pass")
+pagePass = {{% page.pass %}}
+locked = {{% page.locked %}}
+if (locked && urlPass != pagePass) {
+    window.location.replace("morbidswan.site/locked/")
+}
