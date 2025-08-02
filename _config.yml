@@ -34,7 +34,7 @@ plugins:
   - jekyll-feed
   - jekyll-remote-theme
 markdown: GFM
-search_engine: Google
+search_engine: google
 use_github_wiki: FALSE
 inc_after_head: FALSE
 
