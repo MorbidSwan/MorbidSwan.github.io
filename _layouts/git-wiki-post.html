@@ -4,9 +4,7 @@ layout: git-wiki-default
 <div id="pass">
 <script src="{{ '/assets/js/lockedPass.js' | relative_url }}"></script>
 </div>
-{% if page.locked and pass != page.pass %}
-<meta http-equiv="refresh" content="0; url=https://morbidswan.github.io/locked/" />
-{% endif %}
+
 <small>{{ page.date | date: "%-d %B %Y" }}</small>
 {% if page.author or site.author %}
 <p class="view">by {{ page.author | default: site.author }}</p>
