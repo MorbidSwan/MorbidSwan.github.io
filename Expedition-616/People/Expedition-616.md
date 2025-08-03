@@ -9,15 +9,18 @@ Expedition-616 is the 616th expedition to leave [Song Town](/Expedition-616/Plac
 
 ### Members
 The member of Expedition-616 include:
-- Expedition Member #1
-- Expedition Member #2
-- Expedition Member #3
-- Expedition Member #4
-- Expedition Member #5
-- Expedition Member #6
-- Expedition Member #7?
-- Expedition Member #8?
-- Expedition Member #9?
+- [Alira Fenn](/Expedition-616/People/Expedition-616/Alira%20Fenn)
+- [Joran “Jori” Tidewalker](/Expedition-616/People/Expedition-616/Jori)
+- [Quess](/Expedition-616/People/Expedition-616/Quess)
+- [Therren Marsh](/Expedition-616/People/Expedition-616/Therren%20Marsh)
+- [Kesta Vire](/Expedition-616/People/Expedition-616/Kesta%20Vire)
+- [Donnock “Donny” Bales](/Expedition-616/People/Expedition-616/Donny)
+- [Boro Thatch](/Expedition-616/People/Expedition-616/Boro%20Thatch)
+- [Lirra Qiln](/Expedition-616/People/Expedition-616/Lirra%20Qiln)
+- [Mokka Brightrain](/Expedition-616/People/Expedition-616/Mokka%20Brightrain)
+- [Brunt Casterfall](/Expedition-616/People/Expedition-616/Brunt%20Casterfall)
+- [Nellin Jaye](/Expedition-616/People/Expedition-616/Nellin%20Jaye)
+- [Alvus Nore](/Expedition-616/People/Expedition-616/Alvus%20Nore)
 - Lavender Character
 - Jess Character
 - Jess Character
