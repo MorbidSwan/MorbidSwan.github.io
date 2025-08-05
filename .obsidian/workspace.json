@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Expedition-616/Main.md",
+                "file": "Expedition-616/People/Jack.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Main"
+              "title": "Jack"
             }
           }
         ]
@@ -181,6 +181,14 @@
   },
   "active": "af149cabea894eac",
   "lastOpenFiles": [
+    "web/Past Life Watchlist.md",
+    "web/test.md",
+    "web/Locked.md",
+    "web/bingud.md",
+    "Expedition-616/Main.md",
+    "assets/images/swan_logo.png",
+    "assets/images/Adobe Express - file.png",
+    "CNAME",
     "Expedition-616/Deities/Table.md",
     "Expedition-616/People/Expedition-616.md",
     "assets/images/swan_logo.jpg",
@@ -203,11 +211,7 @@
     "Expedition-616/People/Expedition-616/Therren Marsh.md",
     "Expedition-616/People/Expedition-616/Quess.md",
     "Expedition-616/People/Expedition-616/Kesta Vire.md",
-    "Expedition-616/People/Expedition-616/Donnock “Donny” Bales.md",
-    "Expedition-616/People/Expedition-616/Joran “Jori” Tidewalker.md",
-    "Expedition-616/People/Expedition-616/Alira Fenn.md",
     "Expedition-616/People/Expedition-616",
-    "Expedition-616/People/Jack.md",
     "assets/js/lockedPass.js",
     "web/project_Nala 2025-08-02T00_07_58.433Z.html",
     "web/hextml.html",
@@ -218,7 +222,6 @@
     "assets/images/external-link-ltr-icon.png",
     "assets/images/external.svg",
     "Expedition-616/Deities",
-    "Expedition-616/Places",
     "assets/fonts/Noto-Sans-regular/Noto-Sans-regular.svg",
     "assets/fonts/Noto-Sans-700italic/Noto-Sans-700italic.svg",
     "assets/fonts/Noto-Sans-italic/Noto-Sans-italic.svg",

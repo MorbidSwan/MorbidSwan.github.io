@@ -5,5 +5,6 @@ locked: "true"
 pass: "1234"
 tags:
   - locked
+sitemap: "False"
 ---
 TEST
