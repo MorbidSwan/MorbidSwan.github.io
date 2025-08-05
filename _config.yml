@@ -37,8 +37,9 @@ markdown: GFM
 search_engine: google
 use_github_wiki: FALSE
 inc_after_head: FALSE
-logo_url: assets\images\swan_logo.jpg
+logo_url: assets/images/swan_logo.jpg
 show_wiki_pages: TRUE
+google_cse_token: 2493c8704bb514a9e
 
 # Exclude from processing.
 # The following items will not be processed, by default.
