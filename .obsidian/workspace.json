@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Expedition-616/Main.md",
-                "mode": "preview",
+                "file": "Expedition-616/People/Expedition-616.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Main"
+              "title": "Expedition-616"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Expedition-616/Main.md",
+                "file": "test.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Main"
+              "title": "Outline of test"
             }
           },
           {
@@ -162,7 +162,7 @@
             }
           },
           {
-            "id": "def280f4e5c51f76",
+            "id": "48833e272329bd3a",
             "type": "leaf",
             "state": {
               "type": "initiative-tracker-view",
@@ -170,35 +170,9 @@
               "icon": "initiative-tracker",
               "title": "Initiative Tracker"
             }
-          },
-          {
-            "id": "818e0221b3a2dc97",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {},
-              "icon": "spreadsheet",
-              "title": "Advanced Tables"
-            }
           }
         ],
         "currentTab": 4
-      },
-      {
-        "id": "bc638b730d0f4813",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "6696edebdf6d2316",
-            "type": "leaf",
-            "state": {
-              "type": "fantasy-statblocks-creature-pane",
-              "state": {},
-              "icon": "skull",
-              "title": "Combatant"
-            }
-          }
-        ]
       }
     ],
     "direction": "horizontal",
@@ -206,42 +180,47 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "initiative-tracker:Initiative Tracker Encounter Builder": false,
+      "obsidian-5e-statblocks:Open Creature pane": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "obsidian-git:Open Git source control": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "initiative-tracker:Initiative Tracker Encounter Builder": false,
-      "obsidian-5e-statblocks:Open Creature pane": false
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "af149cabea894eac",
   "lastOpenFiles": [
-    "assets/maps/hexton-hills - Nala_ overworld (11).json",
-    "assets/maps/hexton-hills - Nala_ overworld (11).png",
-    "assets/maps",
-    "assets/New folder",
-    "assets/images/hexton-hills - Nala_ overworld (11).json",
-    "assets/images/hexton-hills - Nala_ overworld (11).png",
-    "Expedition-616/People/Expedition-616.md",
-    "Expedition-616/People/Aeri.md",
-    "Expedition-616/Main.md",
-    "Expedition-616/Rules/Travel Pace.md",
+    "mapJSONtranslate.py",
+    "assets/maps/overworld11.json",
+    "assets/maps/hexton-hills - Nala_ overworld (11) copy.json",
+    "assets/maps/hexton-hills - Nala_ overworld (11).png.~tmp",
+    "map.py",
     "Expedition-616/People/Jack.md",
+    "Expedition-616/People/The Curiosity.md",
+    "wiki/main_page.md",
+    "bestiary/fluff-bestiary-mpp.json",
+    "bestiary/fluff-bestiary-awm.json",
+    "bestiary/fluff-bestiary-mm.json",
+    "bestiary/fluff-bestiary-gos.json",
+    "bestiary/bestiary-mtf.json",
+    "bestiary/fluff-bestiary-rot.json",
+    "assets/maps/hexton-hills - Nala_ overworld (11).png",
     "web/Past Life Watchlist.md",
     "web/test.md",
     "web/Locked.md",
     "web/bingud.md",
+    "Expedition-616/Main.md",
     "assets/images/swan_logo.png",
     "assets/images/Adobe Express - file.png",
-    "CNAME",
     "Expedition-616/Deities/Table.md",
+    "Expedition-616/People/Expedition-616.md",
     "assets/images/swan_logo.jpg",
-    "Expedition-616/People/The Curiosity.md",
     "Expedition-616/People/Hunk.md",
+    "Expedition-616/People/Aeri.md",
     "Expedition-616/Deities/Yeogbyeong.md",
     "Expedition-616/Deities/Salm.md",
     "Expedition-616/Deities/Mabeob.md",
@@ -255,16 +234,11 @@
     "Expedition-616/People/Expedition-616/Mokka Brightrain.md",
     "Expedition-616/People/Expedition-616/Brunt Casterfall.md",
     "Expedition-616/People/Expedition-616/Lirra Qiln.md",
-    "Expedition-616/People/Expedition-616",
-    "assets/js/lockedPass.js",
-    "web/project_Nala 2025-08-02T00_07_58.433Z.html",
-    "web/hextml.html",
-    "Expedition-616/Rules",
-    "Expedition-616/Items",
     "assets/images/external-link-ltr-icon.png",
     "assets/images/external.svg",
     "assets/fonts/Noto-Sans-regular/Noto-Sans-regular.svg",
     "assets/fonts/Noto-Sans-700italic/Noto-Sans-700italic.svg",
-    "assets/fonts/Noto-Sans-italic/Noto-Sans-italic.svg"
+    "assets/fonts/Noto-Sans-italic/Noto-Sans-italic.svg",
+    "assets/fonts/Noto-Sans-700/Noto-Sans-700.svg"
   ]
 }
