@@ -2,9 +2,11 @@
 permalink: /Expedition-616/People/Expedition-616/Therren%20Marsh
 layout: git-wiki-post
 ---
-# Quess
+# Therren Marsh
 
 A member of [Expedition-616](/Expedition-616/People/Expedition-616).
+
+- **Status**: Deceased
 
 - **Race:** Dwarf
     

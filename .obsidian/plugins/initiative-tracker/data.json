@@ -1,7 +1,47 @@
 {
-  "players": [],
-  "parties": [],
-  "defaultParty": null,
+  "players": [
+    {
+      "note": "Aeri",
+      "path": "Expedition-616/People/Aeri.md",
+      "name": "Aeri",
+      "ac": 15,
+      "hp": 46,
+      "level": 5,
+      "modifier": 6,
+      "player": true
+    },
+    {
+      "note": "Hunk",
+      "path": "Expedition-616/People/Hunk.md",
+      "name": "Hunk",
+      "ac": 17,
+      "hp": 58,
+      "level": 5,
+      "modifier": 0,
+      "player": true
+    },
+    {
+      "note": "The Curiosity",
+      "path": "Expedition-616/People/The Curiosity.md",
+      "name": "The Curiosity",
+      "ac": 15,
+      "hp": 34,
+      "level": 5,
+      "modifier": 2,
+      "player": true
+    }
+  ],
+  "parties": [
+    {
+      "name": "Expiditioners",
+      "players": [
+        "Aeri",
+        "Hunk",
+        "The Curiosity"
+      ]
+    }
+  ],
+  "defaultParty": "Expiditioners",
   "statuses": [
     {
       "name": "Blinded",
@@ -98,9 +138,139 @@
   "playerMarker": "default",
   "monsterMarker": "default",
   "state": {
-    "creatures": [],
+    "creatures": [
+      {
+        "name": "Aeri",
+        "initiative": 15,
+        "static": false,
+        "modifier": 6,
+        "hp": 46,
+        "currentMaxHP": 46,
+        "ac": 15,
+        "currentAC": 15,
+        "note": "Aeri",
+        "path": "Expedition-616/People/Aeri.md",
+        "id": "ID_aad9090a286b",
+        "currentHP": 46,
+        "tempHP": 0,
+        "status": [],
+        "enabled": true,
+        "level": 5,
+        "player": true,
+        "active": false,
+        "hidden": false,
+        "friendly": false
+      },
+      {
+        "name": "Hunk",
+        "initiative": 0,
+        "static": false,
+        "modifier": 0,
+        "hp": 58,
+        "currentMaxHP": 58,
+        "ac": 17,
+        "currentAC": 17,
+        "note": "Hunk",
+        "path": "Expedition-616/People/Hunk.md",
+        "id": "ID_4969dbbb98c9",
+        "currentHP": 58,
+        "tempHP": 0,
+        "status": [],
+        "enabled": true,
+        "level": 5,
+        "player": true,
+        "active": false,
+        "hidden": false,
+        "friendly": false
+      },
+      {
+        "name": "The Curiosity",
+        "initiative": 0,
+        "static": false,
+        "modifier": 2,
+        "hp": 34,
+        "currentMaxHP": 34,
+        "ac": 15,
+        "currentAC": 15,
+        "note": "The Curiosity",
+        "path": "Expedition-616/People/The Curiosity.md",
+        "id": "ID_e8d849995b2b",
+        "currentHP": 34,
+        "tempHP": 0,
+        "status": [],
+        "enabled": true,
+        "level": 5,
+        "player": true,
+        "active": false,
+        "hidden": false,
+        "friendly": false
+      },
+      {
+        "name": "Spined Devil",
+        "initiative": 9,
+        "static": false,
+        "modifier": 2,
+        "hp": 45,
+        "currentMaxHP": 45,
+        "cr": "2",
+        "ac": 13,
+        "currentAC": 13,
+        "id": "ID_cabbfbb8eafa",
+        "currentHP": 45,
+        "tempHP": 0,
+        "status": [],
+        "enabled": true,
+        "active": false,
+        "hidden": false,
+        "friendly": false,
+        "hit_dice": "10d6 + 10",
+        "rollHP": true
+      },
+      {
+        "name": "Spined Devil",
+        "initiative": 17,
+        "static": false,
+        "modifier": 2,
+        "hp": 45,
+        "currentMaxHP": 45,
+        "cr": "2",
+        "ac": 13,
+        "currentAC": 13,
+        "id": "ID_49f88b8908ea",
+        "currentHP": 45,
+        "tempHP": 0,
+        "status": [],
+        "enabled": true,
+        "active": false,
+        "hidden": false,
+        "friendly": false,
+        "hit_dice": "10d6 + 10",
+        "rollHP": true
+      },
+      {
+        "name": "Spined Devil",
+        "initiative": 10,
+        "static": false,
+        "modifier": 2,
+        "hp": 45,
+        "currentMaxHP": 45,
+        "cr": "2",
+        "ac": 13,
+        "currentAC": 13,
+        "id": "ID_288a58690b49",
+        "currentHP": 45,
+        "tempHP": 0,
+        "status": [],
+        "enabled": true,
+        "active": false,
+        "hidden": false,
+        "friendly": false,
+        "hit_dice": "10d6 + 10",
+        "rollHP": true
+      }
+    ],
     "state": false,
-    "name": null,
+    "name": "Encounter",
     "round": 1,
     "logFile": "",
     "rollHP": false
@@ -124,11 +294,11 @@
   "additiveTemp": false,
   "rpgSystem": "dnd5e",
   "logging": false,
-  "logFolder": "/",
+  "logFolder": "Expedition-616/Events",
   "resolveTies": "playerFirst",
   "useLegacy": false,
   "diplayPlayerHPValues": true,
-  "rollHP": false,
+  "rollHP": true,
   "descending": true,
   "builder": {
     "showParty": true,
@@ -157,5 +327,5 @@
       }
     ]
   },
-  "rollPlayerInitiatives": 0
+  "rollPlayerInitiatives": 2
 }

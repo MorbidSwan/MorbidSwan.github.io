@@ -1,6 +1,11 @@
 ---
 permalink: /Expedition-616/People/Aeri
 layout: git-wiki-post
+level: 5
+ac: 15
+hp: 46
+pp: "15"
+modifier: 6
 ---
 # Aerator Level 2 Subsection 14A "Queen of Rats"
 

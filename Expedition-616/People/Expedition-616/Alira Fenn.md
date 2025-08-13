@@ -6,6 +6,9 @@ layout: git-wiki-post
 
 A member of [Expedition-616](/Expedition-616/People/Expedition-616).
 
+- **Status**: Deceased
+
+
 **Race:** Half-Elf
 **Class:** Wizard (Divination)
 **Age:** 21
