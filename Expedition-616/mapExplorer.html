@@ -123,10 +123,10 @@ fetch('/assets/maps/overworld11.json')
 
         function getCellData(){
             let mapJson = JSON.parse(localStorage.getItem("mapJSON"));
-            cellBiome.innerHTML = `Biome: ${mapJson.cells[cellAtrans][cellXtrans.value][cellYtrans.value].biome}`;
-            cellCity.innerHTML = `City: ${mapJson.cells[cellAtrans][cellXtrans.value][cellYtrans.value].city}`;
-            cellRoad.innerHTML = `Road: ${mapJson.cells[cellAtrans][cellXtrans.value][cellYtrans.value].road}`;
-            cellRiver.innerHTML = `River: ${mapJson.cells[cellAtrans][cellXtrans.value][cellYtrans.value].river}`;
+            cellBiome.innerHTML = `Biome: ${mapJson.cells[cellAtrans][cellXtrans][cellYtrans].biome}`;
+            cellCity.innerHTML = `City: ${mapJson.cells[cellAtrans][cellXtrans][cellYtrans].city}`;
+            cellRoad.innerHTML = `Road: ${mapJson.cells[cellAtrans][cellXtrans][cellYtrans].road}`;
+            cellRiver.innerHTML = `River: ${mapJson.cells[cellAtrans][cellXtrans][cellYtrans].river}`;
         }
         function checkButtons(){           
             subBut.disabled = true
