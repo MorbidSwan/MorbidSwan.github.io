@@ -6,8 +6,17 @@ is_wiki_page: false
 
 <!DOCTYPE html>
 
+<p id="demo"></p>
+
 <script>
 fetch('/assets/maps/overworld11.json')
     .then((response) => response.json())
-    .then((json) => console.log(json));
+    .then((json) => localStorage.setItem("mapJSON", JSON.stringify(json)));
+</script>
+
+<script>
+// Retrieving data:
+let text = localStorage.getItem("testJSON");
+let obj = JSON.parse(text);
+document.getElementById("demo").innerHTML = obj.width;
 </script>
