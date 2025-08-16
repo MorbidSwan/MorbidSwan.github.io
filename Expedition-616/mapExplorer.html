@@ -104,7 +104,7 @@ fetch('/assets/maps/overworld11.json')
         const cellX = document.getElementById("cellX");
         let cellXtrans = Math.floor(cellX.valueAsNumber/2)
         const cellY = document.getElementById("cellY");
-        let cellYtrans = Math.floor(cellY.valueAsNumber/2)
+        let cellYtrans = Math.floor(cellY.valueAsNumber)
         let cellAtrans = cellX.valueAsNumber%2
         const cellBiome = document.getElementById("cellBiome");
         const cellCity = document.getElementById("cellCity");
@@ -129,6 +129,9 @@ fetch('/assets/maps/overworld11.json')
             cellRiver.innerHTML = `River: ${mapJson.cells[cellAtrans][cellXtrans][cellYtrans].river}`;
         }
         function checkButtons(){           
+            cellAtrans = cellX.valueAsNumber%2
+            cellXtrans = Math.floor(cellX.valueAsNumber/2)
+            cellYtrans = Math.floor(cellY.valueAsNumber)
             subBut.disabled = true
             northwestBut.disabled = true
             northBut.disabled = true
@@ -161,10 +164,7 @@ fetch('/assets/maps/overworld11.json')
             }
         }
         function moveCell(newa, newx, newy){
-            cellAtrans = newa
-            cellXtrans = newx
-            cellYtrans = newy
-            cellX.value = ((newx) * 2) + newa
+            cellX.value = ((newx+(newa/2)) * 2)
             cellY.value = newy
             checkButtons()
             getCellData()
