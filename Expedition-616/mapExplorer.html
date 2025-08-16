@@ -112,6 +112,10 @@ fetch('/assets/maps/overworld11.json')
         southBut.addEventListener("click", function(){moveCell(0, -1)})
         southeastBut.addEventListener("click", function(){moveCell(1, 0)})
 
+        function getCellData(){
+            let mapJson = JSON.parse(localStorage.getItem("mapJSON"));
+            writeout.innerHTML = mapJson.cells[cellX.value-1][cellY.value-1].biome;
+        }
         function checkButtons(){           
             subBut.disabled = false
             northwestBut.disabled = true
@@ -148,10 +152,6 @@ fetch('/assets/maps/overworld11.json')
             cellX.value = `${cellX.valueAsNumber + xmove}`
             cellY.value = `${cellY.valueAsNumber + ymove}`
             getCellData()
-        }
-        function getCellData() {
-            let mapJson = JSON.parse(localStorage.getItem("mapJSON"));
-            writeout.innerHTML = obj.cells[cellX.value-1][cellY.value-1].biome;
         }
     })
 </script>
