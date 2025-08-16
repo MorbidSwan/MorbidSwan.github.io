@@ -11,14 +11,12 @@
             "id": "0261e84766ebde07",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Expedition-616/Campaign Notes/8-10-25.md",
-                "mode": "source",
-                "source": false
+                "file": "assets/maps/hexton-hills - Nala_ overworld (11).png"
               },
-              "icon": "lucide-file",
-              "title": "8-10-25"
+              "icon": "lucide-image",
+              "title": "hexton-hills - Nala_ overworld (11)"
             }
           }
         ]
@@ -220,9 +218,9 @@
   },
   "active": "0261e84766ebde07",
   "lastOpenFiles": [
+    "Expedition-616/Campaign Notes/8-10-25.md",
     "Expedition-616/mapExplorer.html",
     "assets/maps/hexton-hills - Nala_ overworld (11).png",
-    "Expedition-616/Campaign Notes/8-10-25.md",
     "Expedition-616/People/Faelin.md",
     "Expedition-616/Campaign Notes",
     "Expedition-616/Places/Thistlehaven.md",
@@ -255,7 +253,6 @@
     "bestiary/foundry.json",
     "bestiary/fluff-index.json",
     "bestiary/fluff-bestiary-xphb.json",
-    "bestiary/fluff-bestiary-xmm.json",
     "assets/images/hexton-hills - Nala_ overworld (11).png",
     "Expedition-616/People/Expedition-616.md",
     "assets/images/swan_logo.png",

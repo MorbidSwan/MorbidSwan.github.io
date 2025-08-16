@@ -1,4 +1,5 @@
 import json
+import math
 
 file = open(r"assets\maps\hexton-hills - Nala_ overworld (11).json", "r")
 mapJSON = json.load(file)
@@ -24,42 +25,46 @@ for tile in mapJSON["tiles"]:
     elif tileIdType == "AB":
         tile["road"] = True
         tile["river"] = True
-for tile in mapJSON["tiles"]:
-    tileId = tile["tileId"]
-    if (tileId != "Hills" and tileId != "Forest" and tileId != "Grasslands" and tileId != "Ocean" and tileId != "Coast"):
-        centerX = tile["pos"]["x"]
-        centerY = tile["pos"]["y"]
-        biomeCount = [[0, 0, "Grasslands"], [0, 1, "Hills"], [0, 2, "Forest"]]
-        for searchTile in mapJSON["tiles"]:
-            searchX = searchTile["pos"]["x"]
-            searchY = searchTile["pos"]["y"]
-            if((centerY == searchY or centerY-1 == searchY) and (centerX == searchX or centerX-1 == searchX or centerX+1 == searchX)):
-                if searchTile["tileId"] == "Grasslands":
-                    biomeCount[0][0] += 1
-                elif searchTile["tileId"] == "Hills":
-                    biomeCount[1][0] += 1
-                elif searchTile["tileId"] == "Forest":
-                    biomeCount[2][0] += 1
-        tile["tileId"] = max(biomeCount)[2]
 
-width = mapJSON["bounds"]["max"]["x"] + 1
-height = mapJSON["bounds"]["max"]["y"] + 1
+width = math.ceil((mapJSON["bounds"]["max"]["x"] + 1)/2) + 2
+height = mapJSON["bounds"]["max"]["y"] + 3
 mapJSONtranslated = {
-    "cells": [[None for x in range(height)] for y in range(width)],
+    "cells": [[[None for x in range(height)] for y in range(width)], [[None for a in range(height)] for b in range(width)]],
     "width": width,
     "height": height
 }
 for tile in mapJSON["tiles"]:
-    tileX = tile["pos"]["x"]
-    tileY = height-tile["pos"]["y"]-1
-    mapJSONtranslated["cells"][tileX][tileY] = {
+    tileX = math.floor((tile["pos"]["x"])/2) + 1
+    tileY = height-tile["pos"]["y"]-2
+    tileA = (tile["pos"]["x"])%2
+    print("X: "+str(tileX))
+    print("Y: "+str(tileY))
+    print("A: "+str(tileA))
+    mapJSONtranslated["cells"][tileA][tileX][tileY] = {
         "biome": tile["tileId"]
     }
-    if "city" in tile: mapJSONtranslated["cells"][tileX][tileY]["city"] = True
-    if "river" in tile: mapJSONtranslated["cells"][tileX][tileY]["river"] = True
-    if "road" in tile: mapJSONtranslated["cells"][tileX][tileY]["road"] = True
+    if "city" in tile: mapJSONtranslated["cells"][tileA][tileX][tileY]["city"] = True
+    if "river" in tile: mapJSONtranslated["cells"][tileA][tileX][tileY]["river"] = True
+    if "road" in tile: mapJSONtranslated["cells"][tileA][tileX][tileY]["road"] = True
+
+for idxA, array in enumerate(mapJSONtranslated["cells"]):
+    for idxX, x in enumerate(array):
+        for idxY, tile in enumerate(x):
+            if tile != None:
+                tileBiome = tile["biome"]
+                if (tileBiome != "Hills" and tileBiome != "Forest" and tileBiome != "Grasslands" and tileBiome != "Ocean" and tileBiome != "Coast"):
+                    biomeCount = [[0, 0, "Grasslands"], [0, 1, "Hills"], [0, 2, "Forest"]]
+                    for searchTile in [mapJSONtranslated["cells"][idxA][idxX][idxY-1], mapJSONtranslated["cells"][idxA][idxX][idxY+1], mapJSONtranslated["cells"][1-idxA][idxX-1+idxA][idxY-1+idxA], mapJSONtranslated["cells"][1-idxA][idxX-1+idxA][idxY+idxA], mapJSONtranslated["cells"][1-idxA][idxX+idxA][idxY-1+idxA], mapJSONtranslated["cells"][1-idxA][idxX+idxA][idxY+idxA]]:
+                        if searchTile != None:
+                            if searchTile["biome"] == "Grasslands":
+                                biomeCount[0][0] += 1
+                            elif searchTile["biome"] == "Hills":
+                                biomeCount[1][0] += 1
+                            elif searchTile["biome"] == "Forest":
+                                biomeCount[2][0] += 1
+                    tile["biome"] = max(biomeCount)[2]
+
+
 file = open(r"assets\maps\overworld11.json", "w")
 json.dump(mapJSONtranslated, file)
 file.close()
-
-# (0,+1) (0,-1) (-1,-1) (-1, 0) (+1,-1) (+1,0)
