@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "7690cb7f8baf6bdb",
+        "id": "e0e4e53b817826b7",
         "type": "tabs",
         "children": [
           {
-            "id": "af149cabea894eac",
+            "id": "0261e84766ebde07",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Expedition-616/People/Jack.md",
+                "file": "Expedition-616/Campaign Notes/8-10-25.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Jack"
+              "title": "8-10-25"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "test.md",
+                "file": "Expedition-616/Campaign Notes/8-10-25.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of test"
+              "title": "Outline of 8-10-25"
             }
           },
           {
@@ -160,9 +160,45 @@
               "icon": "git-pull-request",
               "title": "Source Control"
             }
+          },
+          {
+            "id": "def280f4e5c51f76",
+            "type": "leaf",
+            "state": {
+              "type": "initiative-tracker-view",
+              "state": {},
+              "icon": "initiative-tracker",
+              "title": "Initiative Tracker"
+            }
+          },
+          {
+            "id": "818e0221b3a2dc97",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
+            }
           }
         ],
         "currentTab": 4
+      },
+      {
+        "id": "2404ebd214731512",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3c62427a97f4cd1d",
+            "type": "leaf",
+            "state": {
+              "type": "initiative-tracker-creature-view",
+              "state": {},
+              "icon": "initiative-tracker-creature-view",
+              "title": "Combatant"
+            }
+          }
+        ]
       }
     ],
     "direction": "horizontal",
@@ -176,55 +212,59 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "initiative-tracker:Initiative Tracker Encounter Builder": false,
+      "obsidian-5e-statblocks:Open Creature pane": false
     }
   },
-  "active": "af149cabea894eac",
+  "active": "0261e84766ebde07",
   "lastOpenFiles": [
-    "web/Past Life Watchlist.md",
-    "web/test.md",
-    "web/Locked.md",
-    "web/bingud.md",
-    "Expedition-616/Main.md",
-    "assets/images/swan_logo.png",
-    "assets/images/Adobe Express - file.png",
-    "CNAME",
-    "Expedition-616/Deities/Table.md",
-    "Expedition-616/People/Expedition-616.md",
-    "assets/images/swan_logo.jpg",
-    "Expedition-616/People/The Curiosity.md",
-    "Expedition-616/People/Hunk.md",
-    "Expedition-616/People/Aeri.md",
-    "Expedition-616/Deities/Yeogbyeong.md",
-    "Expedition-616/Deities/Salm.md",
-    "Expedition-616/Deities/Mabeob.md",
-    "Expedition-616/Deities/Jeongjaeng.md",
-    "Expedition-616/Deities/Jayeon.md",
-    "Expedition-616/Deities/Gusil.md",
-    "Expedition-616/Deities/Eon-eo.md",
+    "Expedition-616/mapExplorer.html",
+    "assets/maps/hexton-hills - Nala_ overworld (11).png",
+    "Expedition-616/Campaign Notes/8-10-25.md",
+    "Expedition-616/People/Faelin.md",
+    "Expedition-616/Campaign Notes",
+    "Expedition-616/Places/Thistlehaven.md",
+    "Expedition-616/Encounters/Lv. 5 Random Encounter 1.md",
+    "Expedition-616/People/Expedition-616/Alira Fenn.md",
     "Expedition-616/People/Expedition-616/Alvus Nore.md",
     "Expedition-616/People/Expedition-616/Boro Thatch.md",
-    "Expedition-616/People/Expedition-616/Nellin Jaye.md",
-    "Expedition-616/People/Expedition-616/Mokka Brightrain.md",
     "Expedition-616/People/Expedition-616/Brunt Casterfall.md",
+    "Expedition-616/People/Expedition-616/Donnock “Donny” Bales.md",
+    "Expedition-616/People/Expedition-616/Joran “Jori” Tidewalker.md",
+    "Expedition-616/People/Expedition-616/Kesta Vire.md",
     "Expedition-616/People/Expedition-616/Lirra Qiln.md",
+    "Expedition-616/People/Expedition-616/Mokka Brightrain.md",
+    "Expedition-616/People/Expedition-616/Nellin Jaye.md",
     "Expedition-616/People/Expedition-616/Therren Marsh.md",
     "Expedition-616/People/Expedition-616/Quess.md",
-    "Expedition-616/People/Expedition-616/Kesta Vire.md",
-    "Expedition-616/People/Expedition-616",
-    "assets/js/lockedPass.js",
-    "web/project_Nala 2025-08-02T00_07_58.433Z.html",
-    "web/hextml.html",
-    "Expedition-616/Rules",
-    "Expedition-616/Items",
-    "Expedition-616/Events",
-    "Expedition-616/People",
+    "Expedition-616/Rules/Travel Pace.md",
+    "Expedition-616/Deities/Table.md",
+    "Expedition-616/Encounters",
+    "Expedition-616/People/Hunk.md",
+    "Expedition-616/People/The Curiosity.md",
+    "Expedition-616/People/Aeri.md",
+    "Expedition-616/Deities/Gusil.md",
+    "Expedition-616/Places/Song Town.md",
+    "Expedition-616/Main.md",
+    "mapJSONtranslate.py",
+    "bestiary/template.json",
+    "bestiary/legendarygroups.json",
+    "bestiary/index.json",
+    "bestiary/foundry.json",
+    "bestiary/fluff-index.json",
+    "bestiary/fluff-bestiary-xphb.json",
+    "bestiary/fluff-bestiary-xmm.json",
+    "assets/images/hexton-hills - Nala_ overworld (11).png",
+    "Expedition-616/People/Expedition-616.md",
+    "assets/images/swan_logo.png",
+    "assets/images/Adobe Express - file.png",
+    "assets/images/swan_logo.jpg",
     "assets/images/external-link-ltr-icon.png",
     "assets/images/external.svg",
-    "Expedition-616/Deities",
     "assets/fonts/Noto-Sans-regular/Noto-Sans-regular.svg",
     "assets/fonts/Noto-Sans-700italic/Noto-Sans-700italic.svg",
-    "assets/fonts/Noto-Sans-italic/Noto-Sans-italic.svg",
-    "assets/fonts/Noto-Sans-700/Noto-Sans-700.svg"
+    "assets/fonts/Noto-Sans-italic/Noto-Sans-italic.svg"
   ]
 }
