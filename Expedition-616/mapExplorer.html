@@ -102,10 +102,10 @@ fetch('/assets/maps/overworld11.json')
         const southBut = document.getElementById("south");
         const southeastBut = document.getElementById("southeast");
         const cellX = document.getElementById("cellX");
-        const cellXtrans = Math.floor(cellX.valueAsNumber/2)
+        let cellXtrans = Math.floor(cellX.valueAsNumber/2)
         const cellY = document.getElementById("cellY");
-        const cellYtrans = Math.floor(cellY.valueAsNumber/2)
-        const cellAtrans = cellX.valueAsNumber%2
+        let cellYtrans = Math.floor(cellY.valueAsNumber/2)
+        let cellAtrans = cellX.valueAsNumber%2
         const cellBiome = document.getElementById("cellBiome");
         const cellCity = document.getElementById("cellCity");
         const cellRoad = document.getElementById("cellRoad");
@@ -161,6 +161,9 @@ fetch('/assets/maps/overworld11.json')
             }
         }
         function moveCell(newa, newx, newy){
+            cellAtrans = newa
+            cellXtrans = newx
+            cellYtrans = newy
             cellX.value = ((newx) * 2) + newa
             cellY.value = newy
             checkButtons()
