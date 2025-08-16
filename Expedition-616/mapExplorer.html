@@ -101,6 +101,7 @@ fetch('/assets/maps/overworld11.json')
     const southeastBut = document.getElementById("southeast");
     const cellX = document.getElementById("cellX");
     const cellY = document.getElementById("cellY");
+    const writeout = document.getElementById("cellBiome");
 
     subBut.addEventListener("click", getCellData());
     northwestBut.addEventListener("click", function(){moveCell(-1, 1)})
@@ -149,7 +150,7 @@ fetch('/assets/maps/overworld11.json')
     }
     function getCellData() {
         let mapJson = JSON.parse(localStorage.getItem("mapJSON"));
-        document.getElementById("cellBiome").innerHTML = obj.cells[cellX.value-1][cellY.value-1].biome;
+        writeout.innerHTML = obj.cells[cellX.value-1][cellY.value-1].biome;
     }
 </script>
 
