@@ -52,7 +52,7 @@ is_wiki_page: false
     type="button"
     id="northeast"
     name="northeast"
-    value="Notheast"
+    value="Northeast"
     disabled="true"
     />
 
@@ -111,7 +111,7 @@ fetch('/assets/maps/overworld11.json')
     southeastBut.addEventListener("click", function(){moveCell(1, 0)})
 
     function checkButtons(){
-        subBut.disabled = true
+        subBut.disabled = false
         northwestBut.disabled = true
         northBut.disabled = true
         northeastBut.disabled = true
@@ -119,6 +119,7 @@ fetch('/assets/maps/overworld11.json')
         southBut.disabled = true
         southeastBut.disabled = true
         if (cellX.value != null && cellY.value != null){
+            subBut.disabled = false
             if (cellX.value > 1){
                 if (cellY.value > 1){
                     southwestBut.disabled = false
