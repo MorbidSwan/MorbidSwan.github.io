@@ -13,7 +13,6 @@ is_wiki_page: false
     min="1"
     max="17"
     placeholder="tile X"
-    onchange="checkButtons()"
     />
 
 <input
@@ -23,7 +22,6 @@ is_wiki_page: false
     min="1"
     max="25"
     placeholder="tile Y"
-    onchange="checkButtons()"
     />
 
 <input
@@ -104,6 +102,8 @@ fetch('/assets/maps/overworld11.json')
         const cellY = document.getElementById("cellY");
         const writeout = document.getElementById("cellBiome");
 
+        cellX.addEventListener("change", checkButtons())
+        cellY.addEventListener("change", checkButtons())
         subBut.addEventListener("click", getCellData());
         northwestBut.addEventListener("click", function(){moveCell(-1, 1)})
         northBut.addEventListener("click", function(){moveCell(0, 1)})
