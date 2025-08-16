@@ -18,5 +18,5 @@ fetch('/assets/maps/overworld11.json')
 // Retrieving data:
 let text = localStorage.getItem("mapJSON");
 let obj = JSON.parse(text);
-document.getElementById("demo").innerHTML = obj.width;
+document.getElementById("demo").innerHTML = obj.cells[0][0].biome;
 </script>
