@@ -218,47 +218,12 @@
       "obsidian-5e-statblocks:Open Creature pane": false
     }
   },
-  "floating": {
-    "id": "1b28f486d1864fe6",
-    "type": "floating",
-    "children": [
-      {
-        "id": "03560a5b572bd461",
-        "type": "window",
-        "children": [
-          {
-            "id": "cffb8e8824a95b46",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "04f3c6eb6b1fde0a",
-                "type": "leaf",
-                "state": {
-                  "type": "image",
-                  "state": {
-                    "file": "assets/maps/hexton-hills - Nala_ overworld (11).png"
-                  },
-                  "icon": "lucide-image",
-                  "title": "hexton-hills - Nala_ overworld (11)"
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": 256,
-        "y": 56,
-        "width": 1024,
-        "height": 800,
-        "maximize": false,
-        "zoom": 0
-      }
-    ]
-  },
-  "active": "418ba4339109cb8e",
+  "active": "0261e84766ebde07",
   "lastOpenFiles": [
-    "Expedition-616/People/Faelin.md",
+    "Expedition-616/mapExplorer.html",
+    "assets/maps/hexton-hills - Nala_ overworld (11).png",
     "Expedition-616/Campaign Notes/8-10-25.md",
+    "Expedition-616/People/Faelin.md",
     "Expedition-616/Campaign Notes",
     "Expedition-616/Places/Thistlehaven.md",
     "Expedition-616/Encounters/Lv. 5 Random Encounter 1.md",
@@ -275,7 +240,6 @@
     "Expedition-616/People/Expedition-616/Therren Marsh.md",
     "Expedition-616/People/Expedition-616/Quess.md",
     "Expedition-616/Rules/Travel Pace.md",
-    "assets/maps/hexton-hills - Nala_ overworld (11).png",
     "Expedition-616/Deities/Table.md",
     "Expedition-616/Encounters",
     "Expedition-616/People/Hunk.md",
@@ -294,7 +258,6 @@
     "bestiary/fluff-bestiary-xmm.json",
     "assets/images/hexton-hills - Nala_ overworld (11).png",
     "Expedition-616/People/Expedition-616.md",
-    "Expedition-616/People/Jack.md",
     "assets/images/swan_logo.png",
     "assets/images/Adobe Express - file.png",
     "assets/images/swan_logo.jpg",

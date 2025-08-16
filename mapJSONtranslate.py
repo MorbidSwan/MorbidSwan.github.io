@@ -1,6 +1,6 @@
 import json
 
-file = open(r"assets\maps\overworld11.json", "r")
+file = open(r"assets\maps\hexton-hills - Nala_ overworld (11).json", "r")
 mapJSON = json.load(file)
 file.close()
 for tile in mapJSON["tiles"]:
@@ -42,8 +42,24 @@ for tile in mapJSON["tiles"]:
                     biomeCount[2][0] += 1
         tile["tileId"] = max(biomeCount)[2]
 
+width = mapJSON["bounds"]["max"]["x"] + 1
+height = mapJSON["bounds"]["max"]["y"] + 1
+mapJSONtranslated = {
+    "cells": [[None for x in range(height)] for y in range(width)],
+    "width": width,
+    "height": height
+}
+for tile in mapJSON["tiles"]:
+    tileX = tile["pos"]["x"]
+    tileY = tile["pos"]["y"]
+    mapJSONtranslated["cells"][tileX][tileY] = {
+        "biome": tile["tileId"]
+    }
+    if "city" in tile: mapJSONtranslated["cells"][tileX][tileY]["city"] = True
+    if "river" in tile: mapJSONtranslated["cells"][tileX][tileY]["river"] = True
+    if "road" in tile: mapJSONtranslated["cells"][tileX][tileY]["road"] = True
 file = open(r"assets\maps\overworld11.json", "w")
-json.dump(mapJSON, file)
+json.dump(mapJSONtranslated, file)
 file.close()
 
 # (0,+1) (0,-1) (-1,-1) (-1, 0) (+1,-1) (+1,0)
