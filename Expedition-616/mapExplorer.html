@@ -13,6 +13,7 @@ is_wiki_page: false
     min="1"
     max="17"
     placeholder="tile X"
+    onchange="checkButtons()"
     />
 
 <input
@@ -20,8 +21,9 @@ is_wiki_page: false
     id="cellY"
     name="cellY"
     min="1"
-    max="17"
+    max="25"
     placeholder="tile Y"
+    onchange="checkButtons()"
     />
 
 <input
@@ -87,7 +89,7 @@ fetch('/assets/maps/overworld11.json')
 </script>
 
 <h3>Biome</h3>
-<p id="cellBiome"></p>
+<p id="cellBiome">None</p>
 
 <script>
     const subBut = document.getElementById("subBut");
@@ -100,8 +102,6 @@ fetch('/assets/maps/overworld11.json')
     const cellX = document.getElementById("cellX");
     const cellY = document.getElementById("cellY");
 
-    cellX.addEventListener("change", checkButtons());
-    cellY.addEventListener("change", checkButtons());
     subBut.addEventListener("click", getCellData());
     northwestBut.addEventListener("click", function(){moveCell(-1, 1)})
     northBut.addEventListener("click", function(){moveCell(0, 1)})
