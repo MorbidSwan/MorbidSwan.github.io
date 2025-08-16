@@ -87,7 +87,10 @@ fetch('/assets/maps/overworld11.json')
 </script>
 
 <h3>Biome</h3>
-<p id="cellBiome">None</p>
+<p id="cellBiome">Biome: None</p>
+<p id="cellCity">City: None</p>
+<p id="cellRoad">Road: None</p>
+<p id="cellRiver">River: None</p>
 
 <script>
     document.addEventListener("DOMContentLoaded", function() {
@@ -100,7 +103,10 @@ fetch('/assets/maps/overworld11.json')
         const southeastBut = document.getElementById("southeast");
         const cellX = document.getElementById("cellX");
         const cellY = document.getElementById("cellY");
-        const writeout = document.getElementById("cellBiome");
+        const cellBiome = document.getElementById("cellBiome");
+        const cellCity = document.getElementById("cellCity");
+        const cellRoad = document.getElementById("cellRoad");
+        const cellRiver = document.getElementById("cellRiver");
 
         cellX.onchange = function(){checkButtons()};
         cellY.onchange = function(){checkButtons()};
@@ -114,7 +120,10 @@ fetch('/assets/maps/overworld11.json')
 
         function getCellData(){
             let mapJson = JSON.parse(localStorage.getItem("mapJSON"));
-            writeout.innerHTML = mapJson.cells[cellX.value-1][cellY.value-1].biome;
+            cellBiome.innerHTML = `Biome: ${mapJson.cells[cellX.value-1][cellY.value-1].biome}`;
+            cellCity.innerHTML = `City: ${mapJson.cells[cellX.value-1][cellY.value-1].city}`;
+            cellRoad.innerHTML = `Road: ${mapJson.cells[cellX.value-1][cellY.value-1].road}`;
+            cellRiver.innerHTML = `River: ${mapJson.cells[cellX.value-1][cellY.value-1].river}`;
         }
         function checkButtons(){           
             subBut.disabled = true
@@ -151,6 +160,7 @@ fetch('/assets/maps/overworld11.json')
         function moveCell(xmove, ymove){
             cellX.value = `${cellX.valueAsNumber + xmove}`
             cellY.value = `${cellY.valueAsNumber + ymove}`
+            checkButtons()
             getCellData()
         }
     })
