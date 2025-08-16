@@ -6,7 +6,79 @@ is_wiki_page: false
 
 <!DOCTYPE html>
 
-<p id="demo"></p>
+<input
+    type="number"
+    id="cellX"
+    name="cellX"
+    min="1"
+    max="17"
+    placeholder="tile X"
+    />
+
+<input
+    type="number"
+    id="cellY"
+    name="cellY"
+    min="1"
+    max="17"
+    placeholder="tile Y"
+    />
+
+<input
+    type="button"
+    id="subBut"
+    name="subBut"
+    value="Submit"
+    disabled="true"
+    />
+
+<input
+    type="button"
+    id="northwest"
+    name="northwest"
+    value="Northwest"
+    disabled="true"
+    />
+
+<input
+    type="button"
+    id="north"
+    name="north"
+    value="North"
+    disabled="true"
+    />
+
+<input
+    type="button"
+    id="northeast"
+    name="northeast"
+    value="Notheast"
+    disabled="true"
+    />
+
+<input
+    type="button"
+    id="southeast"
+    name="southeast"
+    value="Southeast"
+    disabled="true"
+    />
+
+<input
+    type="button"
+    id="south"
+    name="south"
+    value="South"
+    disabled="true"
+    />
+
+<input
+    type="button"
+    id="southwest"
+    name="southwest"
+    value="Southwest"
+    disabled="true"
+    />
 
 <script>
 fetch('/assets/maps/overworld11.json')
@@ -14,9 +86,78 @@ fetch('/assets/maps/overworld11.json')
     .then((json) => localStorage.setItem("mapJSON", JSON.stringify(json)));
 </script>
 
+<h3>Biome</h3>
+<p id="cellBiome"></p>
+
+<script>
+    const subBut = document.getElementById("subBut");
+    const northwestBut = document.getElementById("northwest");
+    const northBut = document.getElementById("north");
+    const northeastBut = document.getElementById("northeast");
+    const southwestBut = document.getElementById("southwest");
+    const southBut = document.getElementById("south");
+    const southeastBut = document.getElementById("southeast");
+    const cellX = document.getElementById("cellX");
+    const cellY = document.getElementById("cellY");
+
+    cellX.addEventListener("change", checkButtons());
+    cellY.addEventListener("change", checkButtons());
+    subBut.addEventListener("click", getCellData());
+    northwestBut.addEventListener("click", function(){moveCell(-1, 1)})
+    northBut.addEventListener("click", function(){moveCell(0, 1)})
+    northeastBut.addEventListener("click", function(){moveCell(1, 1)})
+    southwestBut.addEventListener("click", function(){moveCell(-1, 0)})
+    southBut.addEventListener("click", function(){moveCell(0, -1)})
+    southeastBut.addEventListener("click", function(){moveCell(1, 0)})
+
+    function checkButtons(){
+        subBut.disabled = true
+        northwestBut.disabled = true
+        northBut.disabled = true
+        northeastBut.disabled = true
+        southwestBut.disabled = true
+        southBut.disabled = true
+        southeastBut.disabled = true
+        if (cellX.value != null && cellY.value != null){
+            if (cellX.value > 1){
+                if (cellY.value > 1){
+                    southwestBut.disabled = false
+                    southBut.disabled = false
+                }
+                if (cellY.value < 25){
+                    northwestBut.disabled = false
+                    northBut.disabled = false
+                }
+            }
+            if (cellX.value < 17){
+                if (cellY.value > 1){
+                    southeastBut.disabled = false
+                    southBut.disabled = false
+                }
+                if (cellY.value < 25){
+                    northeastBut.disabled = false
+                    northBut.disabled = false
+                }
+            }
+        }
+    }
+    function moveCell(xmove, ymove){
+        cellX.value = cellX.value + xmove
+        cellY.value = cellY.value + ymove
+        getCellData()
+    }
+    function getCellData() {
+        let mapJson = JSON.parse(localStorage.getItem("mapJSON"));
+        document.getElementById("cellBiome").innerHTML = obj.cells[cellX.value-1][cellY.value-1].biome;
+    }
+</script>
+
+<!--
 <script>
 // Retrieving data:
 let text = localStorage.getItem("mapJSON");
 let obj = JSON.parse(text);
 document.getElementById("demo").innerHTML = obj.cells[0][0].biome;
 </script>
+-->
+

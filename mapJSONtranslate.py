@@ -51,7 +51,7 @@ mapJSONtranslated = {
 }
 for tile in mapJSON["tiles"]:
     tileX = tile["pos"]["x"]
-    tileY = tile["pos"]["y"]
+    tileY = height-tile["pos"]["y"]-1
     mapJSONtranslated["cells"][tileX][tileY] = {
         "biome": tile["tileId"]
     }
