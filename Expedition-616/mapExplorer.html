@@ -136,13 +136,13 @@ fetch('/assets/maps/overworld11.json')
         cellA.onchange = function(){moveCell(cellA.value, cellX.value, cellY.value)};
         cellX.onchange = function(){moveCell(cellA.value, cellX.value, cellY.value)};
         cellY.onchange = function(){moveCell(cellA.value, cellX.value, cellY.value)};
-        subBut.addEventListener("click", function(){moveCell(cellA.value, cellX.value, cellY.value)});
-        northwestBut.addEventListener("click", function(){moveCell(1-cellA.value, cellX.value-1+cellA.value, cellY.value-1+cellA.value)})
-        northBut.addEventListener("click", function(){moveCell(cellA.value, cellX.value, cellY.value+1)})
-        northeastBut.addEventListener("click", function(){moveCell(1-cellA.value, cellX.value+cellA.value, cellY.value-1+cellA.value)})
-        southwestBut.addEventListener("click", function(){moveCell(1-cellA.value, cellX.value-1+cellA.value, cellY.value-cellA.value)})
-        southBut.addEventListener("click", function(){moveCell(cellA.value, cellX.value, cellY.value-1)})
-        southeastBut.addEventListener("click", function(){moveCell(1-cellA.value, cellX.value+cellA.value, cellY.value-cellA.value)})
+        subBut.addEventListener("click", function(){moveCell(Number(cellA.value), Number(cellX.value), Number(cellY.value))});
+        northwestBut.addEventListener("click", function(){moveCell(1-Number(cellA.value), Number(cellX.value)-1+Number(cellA.value), Number(cellY.value)-1+Number(cellA.value))})
+        northBut.addEventListener("click", function(){moveCell(Number(cellA.value), Number(cellX.value), Number(cellY.value)+1)})
+        northeastBut.addEventListener("click", function(){moveCell(1-Number(cellA.value), Number(cellX.value)+Number(cellA.value), Number(cellY.value)-1+Number(cellA.value))})
+        southwestBut.addEventListener("click", function(){moveCell(1-Number(cellA.value), Number(cellX.value)-1+Number(cellA.value), Number(cellY.value)-Number(cellA.value))})
+        southBut.addEventListener("click", function(){moveCell(Number(cellA.value), Number(cellX.value), Number(cellY.value)-1)})
+        southeastBut.addEventListener("click", function(){moveCell(1-Number(cellA.value), Number(cellX.value)+Number(cellA.value), Number(cellY.value)-Number(cellA.value))})
 
         function getCellData(){
             let mapJson = JSON.parse(localStorage.getItem("mapJSON"));

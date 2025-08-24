@@ -23,12 +23,12 @@
             "id": "1a9b0c4cc4f50631",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "image",
               "state": {
-                "currentVersion": "1.9.10"
+                "file": "assets/maps/hexton-hills - Nala_ overworld (11).png"
               },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.9.10"
+              "icon": "lucide-image",
+              "title": "hexton-hills - Nala_ overworld (11)"
             }
           }
         ],
