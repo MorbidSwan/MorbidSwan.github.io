@@ -151,7 +151,7 @@ fetch('/assets/maps/overworld11.json')
             cellRoad.innerHTML = `Road: ${mapJson.cells[cellA.value][cellX.value][cellY.value].road}`;
             cellRiver.innerHTML = `River: ${mapJson.cells[cellA.value][cellX.value][cellY.value].river}`;
             cellXtransOut.innerHTML = `X: ${cellXtrans.value}`;
-            cellYtransOut.innerHTML = `X: ${cellYtrans.value}`;
+            cellYtransOut.innerHTML = `Y: ${cellYtrans.value}`;
         }
         function checkButtons(){ 
             northwestBut.disabled = true
@@ -160,26 +160,24 @@ fetch('/assets/maps/overworld11.json')
             southwestBut.disabled = true
             southBut.disabled = true
             southeastBut.disabled = true
-            if (cellXtrans.value != null && cellYtrans.value != null){
-                if (cellXtrans.valueAsNumber > 1){
-                    if (cellYtrans.valueAsNumber > 1){
-                        southwestBut.disabled = false
-                        southBut.disabled = false
-                    }
-                    if (cellYtrans.valueAsNumber < 25){
-                        northwestBut.disabled = false
-                        northBut.disabled = false
-                    }
+            if (cellXtrans.valueAsNumber > 1){
+                if (cellYtrans.valueAsNumber > 1){
+                    southwestBut.disabled = false
+                    southBut.disabled = false
                 }
-                if (cellXtrans.valueAsNumber < 17){
-                    if (cellYtrans.valueAsNumber > 1){
-                        southeastBut.disabled = false
-                        southBut.disabled = false
-                    }
-                    if (cellYtrans.valueAsNumber < 25){
-                        northeastBut.disabled = false
-                        northBut.disabled = false
-                    }
+                if (cellYtrans.valueAsNumber < 25){
+                    northwestBut.disabled = false
+                    northBut.disabled = false
+                }
+            }
+            if (cellXtrans.valueAsNumber < 17){
+                if (cellYtrans.valueAsNumber > 1){
+                    southeastBut.disabled = false
+                    southBut.disabled = false
+                }
+                if (cellYtrans.valueAsNumber < 25){
+                    northeastBut.disabled = false
+                    northBut.disabled = false
                 }
             }
         }

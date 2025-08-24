@@ -18,8 +18,21 @@
               "icon": "lucide-image",
               "title": "hexton-hills - Nala_ overworld (11)"
             }
+          },
+          {
+            "id": "1a9b0c4cc4f50631",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.9.10"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.9.10"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -204,6 +217,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -216,7 +230,7 @@
       "obsidian-5e-statblocks:Open Creature pane": false
     }
   },
-  "active": "0261e84766ebde07",
+  "active": "1a9b0c4cc4f50631",
   "lastOpenFiles": [
     "Expedition-616/Campaign Notes/8-10-25.md",
     "Expedition-616/mapExplorer.html",
