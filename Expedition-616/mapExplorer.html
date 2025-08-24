@@ -160,22 +160,22 @@ fetch('/assets/maps/overworld11.json')
             southwestBut.disabled = true
             southBut.disabled = true
             southeastBut.disabled = true
-            if (cellXtrans.valueAsNumber > 1){
-                if (cellYtrans.valueAsNumber > 1){
+            if (Number(cellXtrans.value) > 1){
+                if (Number(cellYtrans.value) > 1){
                     southwestBut.disabled = false
                     southBut.disabled = false
                 }
-                if (cellYtrans.valueAsNumber < 25){
+                if (Number(cellYtrans.value) < 25){
                     northwestBut.disabled = false
                     northBut.disabled = false
                 }
             }
-            if (cellXtrans.valueAsNumber < 17){
-                if (cellYtrans.valueAsNumber > 1){
+            if (Number(cellXtrans.value) < 17){
+                if (Number(cellYtrans.value) > 1){
                     southeastBut.disabled = false
                     southBut.disabled = false
                 }
-                if (cellYtrans.valueAsNumber < 25){
+                if (Number(cellYtrans.value) < 25){
                     northeastBut.disabled = false
                     northBut.disabled = false
                 }
