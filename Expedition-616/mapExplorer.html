@@ -38,7 +38,6 @@ is_wiki_page: false
     id="subBut"
     name="subBut"
     value="Submit"
-    disabled="true"
     />
 
 <input
@@ -143,7 +142,6 @@ fetch('/assets/maps/overworld11.json')
             cellYtrans.innerHTML = `X: ${cellYtrans.value}`;
         }
         function checkButtons(){ 
-            subBut.disabled = true
             northwestBut.disabled = true
             northBut.disabled = true
             northeastBut.disabled = true
@@ -151,23 +149,22 @@ fetch('/assets/maps/overworld11.json')
             southBut.disabled = true
             southeastBut.disabled = true
             if (cellXtrans.value != null && cellYtrans.value != null){
-                subBut.disabled = false
-                if (cellXtrans.value > 1){
-                    if (cellYtrans.value > 1){
+                if (cellXtrans.valueAsNumber > 1){
+                    if (cellYtrans.valueAsNumber > 1){
                         southwestBut.disabled = false
                         southBut.disabled = false
                     }
-                    if (cellYtrans.value < 25){
+                    if (cellYtrans.valueAsNumber < 25){
                         northwestBut.disabled = false
                         northBut.disabled = false
                     }
                 }
-                if (cellXtrans.value < 17){
-                    if (cellYtrans.value > 1){
+                if (cellXtrans.valueAsNumber < 17){
+                    if (cellYtrans.valueAsNumber > 1){
                         southeastBut.disabled = false
                         southBut.disabled = false
                     }
-                    if (cellYtrans.value < 25){
+                    if (cellYtrans.valueAsNumber < 25){
                         northeastBut.disabled = false
                         northBut.disabled = false
                     }
