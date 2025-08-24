@@ -133,10 +133,10 @@ fetch('/assets/maps/overworld11.json')
         const cellXtransOut = document.getElementById("cellXtransOut");
         const cellYtransOut = document.getElementById("cellYtransOut");
 
-        cellA.onchange = function(){checkButtons()};
-        cellX.onchange = function(){checkButtons()};
-        cellY.onchange = function(){checkButtons()};
-        subBut.addEventListener("click", function(){getCellData()});
+        cellA.onchange = function(){moveCell(cellA.value, cellX.value, cellY.value)};
+        cellX.onchange = function(){moveCell(cellA.value, cellX.value, cellY.value)};
+        cellY.onchange = function(){moveCell(cellA.value, cellX.value, cellY.value)};
+        subBut.addEventListener("click", function(){moveCell(cellA.value, cellX.value, cellY.value)});
         northwestBut.addEventListener("click", function(){moveCell(1-cellA.value, cellX.value-1+cellA.value, cellY.value-1+cellA.value)})
         northBut.addEventListener("click", function(){moveCell(cellA.value, cellX.value, cellY.value+1)})
         northeastBut.addEventListener("click", function(){moveCell(1-cellA.value, cellX.value+cellA.value, cellY.value-1+cellA.value)})
@@ -145,7 +145,6 @@ fetch('/assets/maps/overworld11.json')
         southeastBut.addEventListener("click", function(){moveCell(1-cellA.value, cellX.value+cellA.value, cellY.value-cellA.value)})
 
         function getCellData(){
-            checkButtons()
             let mapJson = JSON.parse(localStorage.getItem("mapJSON"));
             cellBiome.innerHTML = `Biome: ${mapJson.cells[cellA.value][cellX.value][cellY.value].biome}`;
             cellCity.innerHTML = `City: ${mapJson.cells[cellA.value][cellX.value][cellY.value].city}`;
@@ -190,6 +189,7 @@ fetch('/assets/maps/overworld11.json')
             cellY.value = newy
             cellXtrans.value = (newx*2)-(1-newa)
             cellYtrans.value = newy
+            checkButtons()
             getCellData()
         }
     })
