@@ -8,6 +8,15 @@ is_wiki_page: false
 
 <input
     type="number"
+    id="cellA"
+    name="cellA"
+    min="0"
+    max="1"
+    placeholder="tile X"
+    />
+
+<input
+    type="number"
     id="cellX"
     name="cellX"
     min="1"
@@ -87,6 +96,8 @@ fetch('/assets/maps/overworld11.json')
 </script>
 
 <h3>Biome</h3>
+<p id="cellXtrans" value="0">X: None</p>
+<p id="cellYtrans" value="0">Y: None</p>
 <p id="cellBiome">Biome: None</p>
 <p id="cellCity">City: None</p>
 <p id="cellRoad">Road: None</p>
@@ -101,32 +112,35 @@ fetch('/assets/maps/overworld11.json')
         const southwestBut = document.getElementById("southwest");
         const southBut = document.getElementById("south");
         const southeastBut = document.getElementById("southeast");
+        const cellA = document.getElementById("cellA");
         const cellX = document.getElementById("cellX");
-        let cellXtrans = Math.floor((cellX.valueAsNumber+1)/2)
         const cellY = document.getElementById("cellY");
-        let cellYtrans = Math.floor(cellY.valueAsNumber)
-        let cellAtrans = (cellX.valueAsNumber+1)%2
+        const cellXtrans = document.getElementById("cellXtrans");
+        const cellYtrans = document.getElementById("cellYtrans");
         const cellBiome = document.getElementById("cellBiome");
         const cellCity = document.getElementById("cellCity");
         const cellRoad = document.getElementById("cellRoad");
         const cellRiver = document.getElementById("cellRiver");
 
+        cellA.onchange = function(){checkButtons()};
         cellX.onchange = function(){checkButtons()};
         cellY.onchange = function(){checkButtons()};
         subBut.addEventListener("click", function(){getCellData()});
-        northwestBut.addEventListener("click", function(){moveCell(1-cellAtrans, cellXtrans-cellAtrans, cellYtrans+1-cellAtrans)})
-        northBut.addEventListener("click", function(){moveCell(cellAtrans, cellXtrans, cellYtrans+1)})
-        northeastBut.addEventListener("click", function(){moveCell(1-cellAtrans, cellXtrans+1-cellAtrans, cellYtrans+1-cellAtrans)})
-        southwestBut.addEventListener("click", function(){moveCell(1-cellAtrans, cellXtrans-cellAtrans, cellYtrans-cellAtrans)})
-        southBut.addEventListener("click", function(){moveCell(cellAtrans, cellXtrans, cellYtrans-1)})
-        southeastBut.addEventListener("click", function(){moveCell(1-cellAtrans, cellXtrans+1-cellAtrans, cellYtrans-cellAtrans)})
+        northwestBut.addEventListener("click", function(){moveCell(1-cellA.value, cellX.value-1+cellA.value, cellY.value-1+cellA.value)})
+        northBut.addEventListener("click", function(){moveCell(cellA.value, cellX.value, cellY.value+1)})
+        northeastBut.addEventListener("click", function(){moveCell(1-cellA.value, cellX.value+cellA.value, cellY.value-1+cellA.value)})
+        southwestBut.addEventListener("click", function(){moveCell(1-cellA.value, cellX.value-1+cellA.value, cellY.value-cellA.value)})
+        southBut.addEventListener("click", function(){moveCell(cellA.value, cellX.value, cellY.value-1)})
+        southeastBut.addEventListener("click", function(){moveCell(1-cellA.value, cellX.value+cellA.value, cellY.value-cellA.value)})
 
         function getCellData(){
             let mapJson = JSON.parse(localStorage.getItem("mapJSON"));
-            cellBiome.innerHTML = `Biome: ${mapJson.cells[cellAtrans][cellXtrans][cellYtrans].biome}`;
-            cellCity.innerHTML = `City: ${mapJson.cells[cellAtrans][cellXtrans][cellYtrans].city}`;
-            cellRoad.innerHTML = `Road: ${mapJson.cells[cellAtrans][cellXtrans][cellYtrans].road}`;
-            cellRiver.innerHTML = `River: ${mapJson.cells[cellAtrans][cellXtrans][cellYtrans].river}`;
+            cellBiome.innerHTML = `Biome: ${mapJson.cells[cellA.value][cellX.value][cellY.value].biome}`;
+            cellCity.innerHTML = `City: ${mapJson.cells[cellA.value][cellX.value][cellY.value].city}`;
+            cellRoad.innerHTML = `Road: ${mapJson.cells[cellA.value][cellX.value][cellY.value].road}`;
+            cellRiver.innerHTML = `River: ${mapJson.cells[cellA.value][cellX.value][cellY.value].river}`;
+            cellXtrans.innerHTML = `X: ${cellXtrans.value}`;
+            cellYtrans.innerHTML = `X: ${cellYtrans.value}`;
         }
         function checkButtons(){ 
             subBut.disabled = true
@@ -136,24 +150,24 @@ fetch('/assets/maps/overworld11.json')
             southwestBut.disabled = true
             southBut.disabled = true
             southeastBut.disabled = true
-            if (cellX.value != null && cellY.value != null){
+            if (cellXtrans.value != null && cellYtrans.value != null){
                 subBut.disabled = false
-                if (cellX.value > 1){
-                    if (cellY.value > 1){
+                if (cellXtrans.value > 1){
+                    if (cellYtrans.value > 1){
                         southwestBut.disabled = false
                         southBut.disabled = false
                     }
-                    if (cellY.value < 25){
+                    if (cellYtrans.value < 25){
                         northwestBut.disabled = false
                         northBut.disabled = false
                     }
                 }
-                if (cellX.value < 17){
-                    if (cellY.value > 1){
+                if (cellXtrans.value < 17){
+                    if (cellYtrans.value > 1){
                         southeastBut.disabled = false
                         southBut.disabled = false
                     }
-                    if (cellY.value < 25){
+                    if (cellYtrans.value < 25){
                         northeastBut.disabled = false
                         northBut.disabled = false
                     }
@@ -161,11 +175,11 @@ fetch('/assets/maps/overworld11.json')
             }
         }
         function moveCell(newa, newx, newy){
-            cellX.value = (((newx+(newa/2))-(1/2)) * 2)
+            cellA.value = newa
+            cellX.value = newx
             cellY.value = newy
-            cellAtrans = newa
-            cellXtrans = newx
-            cellYtrans = newy
+            cellXtrans.value = (newx*2)-(1-newa)
+            cellYtrans.value = newy
             checkButtons()
             getCellData()
         }

@@ -53,7 +53,7 @@ for idxA, array in enumerate(mapJSONtranslated["cells"]):
             if tile != None:
                 tileBiome = tile["biome"]
                 if (tileBiome != "Hills" and tileBiome != "Forest" and tileBiome != "Grasslands" and tileBiome != "Ocean" and tileBiome != "Coast"):
-                    biomeCount = [[0, 0, "Grasslands"], [0, 1, "Hills"], [0, 2, "Forest"]]
+                    biomeCount = [[0, 0, "Grasslands"], [0, 1, "Hills"], [0, 2, "Forest"], [0, 3, "Ocean"]]
                     for searchTile in [mapJSONtranslated["cells"][idxA][idxX][idxY-1], mapJSONtranslated["cells"][idxA][idxX][idxY+1], mapJSONtranslated["cells"][1-idxA][idxX-1+idxA][idxY-1+idxA], mapJSONtranslated["cells"][1-idxA][idxX-1+idxA][idxY+idxA], mapJSONtranslated["cells"][1-idxA][idxX+idxA][idxY-1+idxA], mapJSONtranslated["cells"][1-idxA][idxX+idxA][idxY+idxA]]:
                         if searchTile != None:
                             if searchTile["biome"] == "Grasslands":
@@ -62,6 +62,8 @@ for idxA, array in enumerate(mapJSONtranslated["cells"]):
                                 biomeCount[1][0] += 1
                             elif searchTile["biome"] == "Forest":
                                 biomeCount[2][0] += 1
+                            elif searchTile["biome"] == "Ocean":
+                                biomeCount[3][0] += 1
                     tile["biome"] = max(biomeCount)[2]
 
 
