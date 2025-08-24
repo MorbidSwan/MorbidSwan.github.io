@@ -88,6 +88,16 @@ is_wiki_page: false
     disabled="true"
     />
 
+    <param
+        name="cellXtrans"
+        id="cellXtrans"
+        value="0"/>
+        
+    <param
+        name="cellYtrans"
+        id="cellYtrans"
+        value="0"/>
+
 <script>
 fetch('/assets/maps/overworld11.json')
     .then((response) => response.json())
@@ -95,8 +105,8 @@ fetch('/assets/maps/overworld11.json')
 </script>
 
 <h3>Biome</h3>
-<p id="cellXtrans" value="0">X: None</p>
-<p id="cellYtrans" value="0">Y: None</p>
+<p id="cellXtransOut">X: None</p>
+<p id="cellYtransOut">Y: None</p>
 <p id="cellBiome">Biome: None</p>
 <p id="cellCity">City: None</p>
 <p id="cellRoad">Road: None</p>
@@ -120,6 +130,8 @@ fetch('/assets/maps/overworld11.json')
         const cellCity = document.getElementById("cellCity");
         const cellRoad = document.getElementById("cellRoad");
         const cellRiver = document.getElementById("cellRiver");
+        const cellXtransOut = document.getElementById("cellXtransOut");
+        const cellYtransOut = document.getElementById("cellYtransOut");
 
         cellA.onchange = function(){checkButtons()};
         cellX.onchange = function(){checkButtons()};
@@ -138,8 +150,8 @@ fetch('/assets/maps/overworld11.json')
             cellCity.innerHTML = `City: ${mapJson.cells[cellA.value][cellX.value][cellY.value].city}`;
             cellRoad.innerHTML = `Road: ${mapJson.cells[cellA.value][cellX.value][cellY.value].road}`;
             cellRiver.innerHTML = `River: ${mapJson.cells[cellA.value][cellX.value][cellY.value].river}`;
-            cellXtrans.innerHTML = `X: ${cellXtrans.value}`;
-            cellYtrans.innerHTML = `X: ${cellYtrans.value}`;
+            cellXtransOut.innerHTML = `X: ${cellXtrans.value}`;
+            cellYtransOut.innerHTML = `X: ${cellYtrans.value}`;
         }
         function checkButtons(){ 
             northwestBut.disabled = true
