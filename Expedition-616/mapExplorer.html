@@ -12,7 +12,7 @@ is_wiki_page: false
     name="cellA"
     min="0"
     max="1"
-    placeholder="tile X"
+    placeholder="tile A"
     />
 
 <input
@@ -88,15 +88,15 @@ is_wiki_page: false
     disabled="true"
     />
 
-    <param
-        name="cellXtrans"
-        id="cellXtrans"
-        value="0"/>
+<param
+    name="cellXtrans"
+    id="cellXtrans"
+    value="0"/>
         
-    <param
-        name="cellYtrans"
-        id="cellYtrans"
-        value="0"/>
+<param
+    name="cellYtrans"
+    id="cellYtrans"
+    value="0"/>
 
 <script>
 fetch('/assets/maps/overworld11.json')
@@ -145,6 +145,7 @@ fetch('/assets/maps/overworld11.json')
         southeastBut.addEventListener("click", function(){moveCell(1-cellA.value, cellX.value+cellA.value, cellY.value-cellA.value)})
 
         function getCellData(){
+            checkButtons()
             let mapJson = JSON.parse(localStorage.getItem("mapJSON"));
             cellBiome.innerHTML = `Biome: ${mapJson.cells[cellA.value][cellX.value][cellY.value].biome}`;
             cellCity.innerHTML = `City: ${mapJson.cells[cellA.value][cellX.value][cellY.value].city}`;
@@ -189,7 +190,6 @@ fetch('/assets/maps/overworld11.json')
             cellY.value = newy
             cellXtrans.value = (newx*2)-(1-newa)
             cellYtrans.value = newy
-            checkButtons()
             getCellData()
         }
     })
