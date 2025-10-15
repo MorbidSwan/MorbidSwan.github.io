@@ -246,54 +246,6 @@
       "obsidian-5e-statblocks:Open Creature pane": false
     }
   },
-  "floating": {
-    "id": "12e0e19120316445",
-    "type": "floating",
-    "children": [
-      {
-        "id": "6303204f63505fb7",
-        "type": "window",
-        "children": [
-          {
-            "id": "9062f7cfa909af81",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "6b8c0c5ea3e2e218",
-                "type": "leaf",
-                "state": {
-                  "type": "initiative-tracker-player-view",
-                  "state": {},
-                  "icon": "lucide-view",
-                  "title": "Player View"
-                }
-              },
-              {
-                "id": "1706a0e5be3c2aa1",
-                "type": "leaf",
-                "state": {
-                  "type": "release-notes",
-                  "state": {
-                    "currentVersion": "1.9.14"
-                  },
-                  "icon": "lucide-book-up",
-                  "title": "Release Notes 1.9.14"
-                }
-              }
-            ],
-            "currentTab": 1
-          }
-        ],
-        "direction": "vertical",
-        "x": 888,
-        "y": -1079,
-        "width": 1024,
-        "height": 803,
-        "maximize": false,
-        "zoom": 0
-      }
-    ]
-  },
   "active": "fd6739c210e7b043",
   "lastOpenFiles": [
     "web/Index_Normal.md",
