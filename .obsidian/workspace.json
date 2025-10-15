@@ -39,12 +39,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "web/Index_Reconnect.md",
+                "file": "_posts/2025-07-22-welcome-to-jekyll.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Index_Reconnect"
+              "title": "2025-07-22-welcome-to-jekyll"
             }
           }
         ],
@@ -248,8 +248,9 @@
   },
   "active": "fd6739c210e7b043",
   "lastOpenFiles": [
-    "web/Index_Normal.md",
     "web/Index_Reconnect.md",
+    "_posts/2025-07-22-welcome-to-jekyll.md",
+    "web/Index_Normal.md",
     "Expedition-616/Encounters/Lv. 5/Lv. 5 Random Moderate Demon Encounter.md",
     "Expedition-616/Encounters/Lv. 5/Rutterkin in City.md",
     "Expedition-616/Encounters/Lv. 5/Lv. 5 Random Hard Devil Encounter 1.md",
@@ -279,7 +280,6 @@
     "Expedition-616/mapExplorer.html",
     "Expedition-616/Campaign Notes",
     "Expedition-616/People/Expedition-616/Alira Fenn.md",
-    "Expedition-616/People/Expedition-616/Alvus Nore.md",
     "Expedition-616/Encounters",
     "mapJSONtranslate.py",
     "bestiary/template.json",
