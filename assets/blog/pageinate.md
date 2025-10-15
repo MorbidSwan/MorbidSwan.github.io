@@ -1,4 +1,4 @@
 ---
 layout: git-wiki-blog
-permalink: /assets/blog
+permalink: /assets/blog/
 ---
