@@ -23,16 +23,32 @@
             "id": "1a9b0c4cc4f50631",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "assets/maps/hexton-hills - Nala_ overworld (11).png"
+                "file": "Expedition-616/Campaign Notes/8-24-25.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "hexton-hills - Nala_ overworld (11)"
+              "icon": "lucide-file",
+              "title": "8-24-25"
+            }
+          },
+          {
+            "id": "fd6739c210e7b043",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "web/Index_Reconnect.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Index_Reconnect"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -213,7 +229,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 476.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -230,45 +246,94 @@
       "obsidian-5e-statblocks:Open Creature pane": false
     }
   },
-  "active": "1a9b0c4cc4f50631",
+  "floating": {
+    "id": "12e0e19120316445",
+    "type": "floating",
+    "children": [
+      {
+        "id": "6303204f63505fb7",
+        "type": "window",
+        "children": [
+          {
+            "id": "9062f7cfa909af81",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "6b8c0c5ea3e2e218",
+                "type": "leaf",
+                "state": {
+                  "type": "initiative-tracker-player-view",
+                  "state": {},
+                  "icon": "lucide-view",
+                  "title": "Player View"
+                }
+              },
+              {
+                "id": "1706a0e5be3c2aa1",
+                "type": "leaf",
+                "state": {
+                  "type": "release-notes",
+                  "state": {
+                    "currentVersion": "1.9.14"
+                  },
+                  "icon": "lucide-book-up",
+                  "title": "Release Notes 1.9.14"
+                }
+              }
+            ],
+            "currentTab": 1
+          }
+        ],
+        "direction": "vertical",
+        "x": 888,
+        "y": -1079,
+        "width": 1024,
+        "height": 803,
+        "maximize": false,
+        "zoom": 0
+      }
+    ]
+  },
+  "active": "fd6739c210e7b043",
   "lastOpenFiles": [
+    "web/Index_Normal.md",
+    "web/Index_Reconnect.md",
+    "Expedition-616/Encounters/Lv. 5/Lv. 5 Random Moderate Demon Encounter.md",
+    "Expedition-616/Encounters/Lv. 5/Rutterkin in City.md",
+    "Expedition-616/Encounters/Lv. 5/Lv. 5 Random Hard Devil Encounter 1.md",
+    "Expedition-616/Dungeons/Early Devil Camp/Easy Combat 2.md",
+    "Expedition-616/Dungeons/Early Devil Camp/Easy Combat 1.md",
+    "Expedition-616/Dungeons/Early Devil Camp/Moderate Boss Combat.md",
+    "Expedition-616/Dungeons/Early Devil Camp/Early Devil Camp.md",
+    "Expedition-616/People/Jim.md",
+    "Expedition-616/Campaign Notes/8-24-25.md",
     "Expedition-616/Campaign Notes/8-10-25.md",
-    "Expedition-616/mapExplorer.html",
+    "Expedition-616/Events/Jiuda.md",
     "assets/maps/hexton-hills - Nala_ overworld (11).png",
     "Expedition-616/People/Faelin.md",
-    "Expedition-616/Campaign Notes",
+    "Expedition-616/People/Aeri.md",
+    "Expedition-616/People/Violet.md",
+    "Expedition-616/People/Jack.md",
+    "Expedition-616/People/Frozzo.md",
+    "Expedition-616/Encounters/Lv. 5/Lv. 5 Random Easy Beast Encounter.md",
     "Expedition-616/Places/Thistlehaven.md",
-    "Expedition-616/Encounters/Lv. 5 Random Encounter 1.md",
+    "Expedition-616/Rules/Travel Pace.md",
+    "Expedition-616/Encounters/Lv. 5/Lv. 5 Random Hard Beast Encounter 1.md",
+    "Expedition-616/Encounters/Lv. 5/Lv. 5 Random Easy Devil Encounter 1.md",
+    "Expedition-616/Encounters/Lv. 5",
+    "Expedition-616/Encounters/Untitled.md",
+    "Expedition-616/Dungeons/Early Devil Camp",
+    "Expedition-616/Dungeons",
+    "Expedition-616/mapExplorer.html",
+    "Expedition-616/Campaign Notes",
     "Expedition-616/People/Expedition-616/Alira Fenn.md",
     "Expedition-616/People/Expedition-616/Alvus Nore.md",
-    "Expedition-616/People/Expedition-616/Boro Thatch.md",
-    "Expedition-616/People/Expedition-616/Brunt Casterfall.md",
-    "Expedition-616/People/Expedition-616/Donnock “Donny” Bales.md",
-    "Expedition-616/People/Expedition-616/Joran “Jori” Tidewalker.md",
-    "Expedition-616/People/Expedition-616/Kesta Vire.md",
-    "Expedition-616/People/Expedition-616/Lirra Qiln.md",
-    "Expedition-616/People/Expedition-616/Mokka Brightrain.md",
-    "Expedition-616/People/Expedition-616/Nellin Jaye.md",
-    "Expedition-616/People/Expedition-616/Therren Marsh.md",
-    "Expedition-616/People/Expedition-616/Quess.md",
-    "Expedition-616/Rules/Travel Pace.md",
-    "Expedition-616/Deities/Table.md",
     "Expedition-616/Encounters",
-    "Expedition-616/People/Hunk.md",
-    "Expedition-616/People/The Curiosity.md",
-    "Expedition-616/People/Aeri.md",
-    "Expedition-616/Deities/Gusil.md",
-    "Expedition-616/Places/Song Town.md",
-    "Expedition-616/Main.md",
     "mapJSONtranslate.py",
     "bestiary/template.json",
     "bestiary/legendarygroups.json",
     "bestiary/index.json",
-    "bestiary/foundry.json",
-    "bestiary/fluff-index.json",
-    "bestiary/fluff-bestiary-xphb.json",
     "assets/images/hexton-hills - Nala_ overworld (11).png",
-    "Expedition-616/People/Expedition-616.md",
     "assets/images/swan_logo.png",
     "assets/images/Adobe Express - file.png",
     "assets/images/swan_logo.jpg",

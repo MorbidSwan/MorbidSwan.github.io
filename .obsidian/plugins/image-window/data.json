@@ -6,10 +6,10 @@
     "Second Window": {
       "hosts": {
         "DT-4XR97M3": {
-          "x": 296,
+          "x": 742,
           "y": 0,
-          "width": 1240,
-          "height": 672,
+          "width": 794,
+          "height": 431,
           "fullscreen": false,
           "maximized": false
         }
