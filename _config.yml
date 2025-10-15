@@ -38,6 +38,12 @@ logo_url: assets/images/swan_logo.png
 show_wiki_pages: FALSE
 google_cse_token: 2493c8704bb514a9e
 
+paginate: 5
+paginate_path: "/assets/blog/page:num"
+permalink: /assets/blog/posts/:year/:month/:day/:title:output_ext
+blog_feature: true
+git_branch: "build"
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
