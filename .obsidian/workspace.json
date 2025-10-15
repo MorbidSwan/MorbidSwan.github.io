@@ -39,12 +39,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "assets/blog/pageinate.md",
+                "file": "_posts/2025-10-15-test.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "pageinate"
+              "title": "2025-10-15-test"
             }
           }
         ],
@@ -248,9 +248,9 @@
   },
   "active": "fd6739c210e7b043",
   "lastOpenFiles": [
+    "assets/blog/pageinate.md",
     "Expedition-616/Deities/Songeop.md",
     "Expedition-616/Deities/Table.md",
-    "assets/blog/pageinate.md",
     "_posts/2025-10-15-test.md",
     "Expedition-616/Dungeons/Early Devil Camp/Easy Combat 2.md",
     "web/Index_Reconnect.md",
