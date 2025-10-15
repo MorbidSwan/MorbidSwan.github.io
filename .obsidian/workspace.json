@@ -39,12 +39,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2025-10-17-test.md",
+                "file": "_posts/2025-10-15-test.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-10-17-test"
+              "title": "2025-10-15-test"
             }
           }
         ],
@@ -246,10 +246,10 @@
       "obsidian-5e-statblocks:Open Creature pane": false
     }
   },
-  "active": "84bc1038ffd60ca3",
+  "active": "fd6739c210e7b043",
   "lastOpenFiles": [
     "Expedition-616/Dungeons/Early Devil Camp/Easy Combat 2.md",
-    "_posts/2025-10-17-test.md",
+    "_posts/2025-10-15-test.md",
     "web/Index_Reconnect.md",
     "web/Index_Normal.md",
     "Expedition-616/Encounters/Lv. 5/Lv. 5 Random Moderate Demon Encounter.md",
