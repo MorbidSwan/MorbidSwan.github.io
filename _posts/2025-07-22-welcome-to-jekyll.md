@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: git-wiki-blog
 title: Welcome to Jekyll!
 date: 2025-07-22 15:19:34 -0400
 categories: jekyll update
