@@ -46,9 +46,21 @@
               "icon": "lucide-file",
               "title": "2025-10-15-test"
             }
+          },
+          {
+            "id": "4ddffad8da53b2c6",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "assets/maps/hexton-hills - Nala_ overworld (11).png"
+              },
+              "icon": "lucide-image",
+              "title": "hexton-hills - Nala_ overworld (11)"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -246,8 +258,14 @@
       "obsidian-5e-statblocks:Open Creature pane": false
     }
   },
-  "active": "fd6739c210e7b043",
+  "active": "4ddffad8da53b2c6",
   "lastOpenFiles": [
+    "assets/maps/hexton-hills - Overworld (9).json",
+    "assets/maps/hexton-hills - Overworld (8).json",
+    "assets/maps/hexton-hills - Overworld (12).json",
+    "assets/maps/hexton-hills - Overworld (8).png",
+    "assets/maps/hexton-hills - Overworld (9).png",
+    "assets/maps/hexton-hills - Overworld (12).png",
     "assets/blog/pageinate.md",
     "Expedition-616/Deities/Songeop.md",
     "Expedition-616/Deities/Table.md",
@@ -274,7 +292,6 @@
     "Expedition-616/Encounters/Lv. 5/Lv. 5 Random Easy Beast Encounter.md",
     "Expedition-616/Places/Thistlehaven.md",
     "Expedition-616/Rules/Travel Pace.md",
-    "Expedition-616/Encounters/Lv. 5/Lv. 5 Random Hard Beast Encounter 1.md",
     "Expedition-616/Encounters/Lv. 5",
     "Expedition-616/Dungeons/Early Devil Camp",
     "Expedition-616/Dungeons",
@@ -283,16 +300,11 @@
     "Expedition-616/Encounters",
     "mapJSONtranslate.py",
     "bestiary/template.json",
-    "bestiary/legendarygroups.json",
-    "bestiary/index.json",
     "assets/images/hexton-hills - Nala_ overworld (11).png",
     "assets/images/swan_logo.png",
     "assets/images/Adobe Express - file.png",
     "assets/images/swan_logo.jpg",
     "assets/images/external-link-ltr-icon.png",
-    "assets/images/external.svg",
-    "assets/fonts/Noto-Sans-regular/Noto-Sans-regular.svg",
-    "assets/fonts/Noto-Sans-700italic/Noto-Sans-700italic.svg",
-    "assets/fonts/Noto-Sans-italic/Noto-Sans-italic.svg"
+    "assets/images/external.svg"
   ]
 }
